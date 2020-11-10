@@ -1,0 +1,7 @@
+# Instalacao do Docker on Ubuntu 18.04
+
+# Criacao da imagem 
+$ docker build -t neoprospecta_desafio . 
+
+# Abertura do container 
+$ docker run -it neoprospecta_desafio
