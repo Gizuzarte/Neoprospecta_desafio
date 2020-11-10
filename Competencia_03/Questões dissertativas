@@ -1,4 +1,5 @@
 Conhecimentos de bioinformática: questões dissertativas sobre montagem de genoma
+
 3.1) Descreva todas as etapas que você usaria para realizar a montagem, anotação e verificação de qualidade de um genoma de um isolado bacteriano, tendo como base arquivos FASTQ de um sequenciamento Illumina MiSeq paired-end (arquivo R1 e R2), com 2 milhões de reads cada. Reads do arquivo R1 tem 306 pares de base, e reads do arquivo R2 tem 206 pares de base. Suponha que a amostra está bem isolada, contendo um único organismo. 
 
 3.2) Descreva como você faria a identificação taxonômica do genoma montado, considerando que a amostra realmente era um isolado bacteriano.
