@@ -12,9 +12,9 @@ O conjunto de dados foi elaborado pela empresa em questão a fim de compreender 
 Para maiores detalhes: [Acesse aqui](https://github.com/Gizuzarte/Neoprospecta_desafio/blob/main/Desafio) 
 
 ## Softwares utilizados
-* [Docker](https://www.docker.com/)
-* [Python3](https://www.python.org/download/releases/3.0/) 
-* [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-* [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-* [qiime2](https://qiime2.org/) (2020.6)
+* [Docker](https://www.docker.com/);
+* [Python3](https://www.python.org/download/releases/3.0/);
+* [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/);
+* [Miniconda](https://docs.conda.io/en/latest/miniconda.html);
+* [qiime2](https://qiime2.org/) (2020.6);
 * [RStudio Cloud](https://rstudio.cloud/)
