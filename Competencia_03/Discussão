@@ -1,0 +1,9 @@
+3.1) Com a chegada do sequenciamento para este tipo (paired-end) seriam realizadas análises para qualidade das sequências, onde qualidades inferiores a phred 20 serão descartadas, vistas previamente no software FastQC e cortes realizados com o Trimmomatic. A montagem seria realizada com o software CLC Genome Workbench e a anotação funcional e possíveis correções, o software Artemis.
+
+3.2) A identificação taxonômica poderia ocorrer com um simples blastn utilizando genes alvo, no caso de bactérias, o gene rRNA 16s. Para confirmação, seria feito uma árvore filogenética contendo organismos próximos e o output para confirmação em nível de espécie. Para estas últimas etapas poderão ser utilizados o software MEGA 7 e o bioedit.
+
+3.3) Seriam passível de automatização em partes, pois os cortes de qualidade são “pessoais”, mesmo que utilizadas as mesmas métricas e o mesmo raciocínio, cada sequência precisa de uma análise única. Existem diversas problemáticas em questão aos arquivos gerados em imagens, não é impossível que sejam interpretados pela maquina, mas o machine learning envolvido deverá ser muito desenvolvido para que não hajam falsos positivos ou negativos.
+
+3.4) A identificação taxonômica de amostras não muito bem isoladas pode ser realizadas com o sistema de barcodes para amostras possíveis. Se o genoma foi montado, porém não muito bem isolado, ou seja, podem haver genes de outros organismos, creio que somente um novo isolamento com melhor qualidade para a realização da montagem do genoma.
+
+3.5) 
