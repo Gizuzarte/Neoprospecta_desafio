@@ -1,0 +1,47 @@
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("phyloseq")
+BiocManager::install("ggplot2")
+
+library(phyloseq)
+library(ggplot2)
+
+# Importa OTU table
+otumat <- as.matrix(read.table("otu_table_tax_amostras.tsv", sep="\t", header=T, row.names=1))
+taxmat = as.matrix(read.table("tax_table_amostras.tsv", sep="\t", header=T, row.names=1))
+rownames(taxmat) <- rownames(otumat)
+colnames(taxmat) <- c("Domain", "Phylum", "Class", "Order", "Family", "Genus", "Species")
+samples_df <- read.table("metadata.csv", sep="\t", header=T)
+
+row.names(samples_df) <- samples_df$sample
+
+class(otumat)
+class(taxmat)
+class(samples_df)
+
+#row.names(samples_df) <- samples_df$SampleID
+
+OTU <- otu_table(otumat, taxa_are_rows = TRUE)
+TAX <- tax_table(taxmat)
+samples <- sample_data(samples_df)
+OTU
+TAX
+samples
+
+physeq = phyloseq(OTU, TAX, samples)
+physeq
+
+# Os resultados dos gráficos de barra com as 50 bactérias mais abundantes podem ser visualizados no RStudio ou então na pasta 'plots'
+TopNOTU_genus <- names(sort(taxa_sums(physeq), TRUE)[1:50]) 
+top_50_genus   <- prune_taxa(TopNOTU_genus, physeq)
+print(top_50_genus)
+
+plot_bar(top_50_genus, fill = "Genus")
+
+TopNOTU_species <- names(sort(taxa_sums(physeq), TRUE)[1:50]) 
+top_50_species   <- prune_taxa(TopNOTU_species, physeq)
+print(top_50_species)
+
+plot_bar(top_50_species, fill = "Species")
+
