@@ -7,4 +7,6 @@ Projeto desenvolvido para o teste formulado pela Neoprospecta para a vaga de bio
 3) Conhecimentos de Bioinformática. 
 
 ## Conjunto de Dados
-Auahushas
+O conjunto de dados foi elaborado pela empresa em questão a fim de compreender a variação da microbiota intestinal natural em resposta ao estado de saúde do hospedeiro.
+
+Para maiores detalhes: [Acesse aqui](https://github.com/Gizuzarte/Neoprospecta_desafio/blob/main/Desafio) 
